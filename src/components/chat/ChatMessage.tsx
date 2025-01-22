@@ -1,35 +1,10 @@
-import React from 'react';
-import { ChatBubbleLeftIcon } from '@heroicons/react/24/outline';
-import { Message } from '../../types';
-import { clsx } from 'clsx';
+// ----------------------------------------------------------------------------------------------
+// By developer Reece Dixon <quantascriptor@gmail.com>
+// Copyright 2025 Reece Dixon
+//
+// This source file is licensed under the custom license available in the license file.
+// This software is protected under copyright laws.
 
-interface ChatMessageProps {
-  message: Message;
-}
 
-export function ChatMessage({ message }: ChatMessageProps) {
-  return (
-    <div
-      className={clsx(
-        'flex',
-        message.isUser ? 'justify-end' : 'justify-start'
-      )}
-    >
-      <div
-        className={clsx(
-          'max-w-[80%] rounded-lg p-4',
-          message.isUser
-            ? 'bg-blue-500 text-white'
-            : 'bg-gray-100 text-gray-900'
-        )}
-      >
-        <div className="flex items-start space-x-2">
-          {!message.isUser && (
-            <ChatBubbleLeftIcon className="w-5 h-5 mt-1" />
-          )}
-          <p>{message.text}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { UserProps)from 'dp/props';
+function ChatTypeGenerator() {};} export default ChatUser;
